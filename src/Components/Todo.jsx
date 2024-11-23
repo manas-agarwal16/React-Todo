@@ -44,7 +44,7 @@ function Todo(curTodo){
 
     return (
             <div className={`text-black flex items-center px-1 mt-2 border-2 rounded-lg h-auto
-            ${isComplete? "bg-green-200" : "bg-purple-200"}`}>
+            ${isComplete? "bg-green-200" : "bg-blue-200"}`}>
 
                 {/* checkbox */}
                 <input onClick={handleComplete}  type="checkbox" checked={isComplete} />
@@ -52,7 +52,7 @@ function Todo(curTodo){
                 {/* todo */}
                 <textarea onChange={(e) => setMessage(e.target.value)} 
                 rows={1}
-                className={`${isEdit ? "bg-white pointer-events-auto" : (isComplete ? "line-through bg-green-200" : "not-line-through bg-purple-200  scrollable")}  w-full m-2 p-1 text-black transition-none outline-none border-none overflow-auto text-lg my-auto resize-none scrollbar-hidden rounded-lg `}
+                className={`${isEdit ? "bg-white pointer-events-auto" : (isComplete ? "line-through bg-green-200" : "not-line-through bg-blue-200  scrollable")}  w-full m-2 p-1 text-black transition-none outline-none border-none overflow-auto text-lg my-auto resize-none scrollbar-hidden rounded-lg `}
 
                 type="text"
                 value={message}
